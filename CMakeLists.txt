@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(CMakeSFMLProject LANGUAGES CXX)
 
+option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+
 include(FetchContent)
 FetchContent_Declare(SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
